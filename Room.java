@@ -18,16 +18,16 @@ class Room {
                 }
                 //宝部屋
                 public void TresureRoom(){
-                    
+                    Item item = new Item();
                 }
                 //罠部屋
                 public void TrapRoom(Player player){
 			Random r = new Random();
 			r.nextInt(2);
 			if(r==0){
-				player.setPoison();
+				Player.setPoison();
 			}else{
-				player.setHP(-2);
+				Player.setHP(-2);
 			}
                 }
                 //秘宝
